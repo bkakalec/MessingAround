@@ -1,0 +1,6 @@
+p[name="bunny"]{color:red;}
+p[name^="bunny"]{color:blue;}
+p[name$="bunny"]{color:green}
+
+p:nth-child(odd){color:red}
+p:nth-child(even){color:green}
