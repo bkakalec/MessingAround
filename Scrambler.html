@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Auto Close</title>
+</head>
+
+<body>
+
+<a href="#" onclick="javascript:closeOnLoad('http://www.orvis.com');">Click to open popup</a>; it will close automatically after five seconds.</p>
+
+<script>
+
+function closeOnLoad(myLink)
+{
+  var newWindow = window.open(myLink, "connectWindow", "width=600,height=400,scrollbars=yes");
+  setTimeout(
+             function()
+             {
+               newWindow.close();
+             },
+            10000
+            );
+  return false;
+}
+
+</script>
+
+</body>
+
+</html>
